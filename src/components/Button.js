@@ -5,7 +5,6 @@ function Button({ count, onClick }) {
     function clickButtons() {
         setClickButton(clickButton + 1)
     }
-    console.log(clickButton)
     return (
         <button onClick={
             () => onClick(count + 1, clickButtons())

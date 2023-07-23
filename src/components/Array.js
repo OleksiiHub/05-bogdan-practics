@@ -1,4 +1,4 @@
-import peoples from "./utils/PEOPLE_DATA";
+import peoples from "./utils/PEOPLE_DATA"
 import People from "../components/People"
 
 function ArrayData() {
