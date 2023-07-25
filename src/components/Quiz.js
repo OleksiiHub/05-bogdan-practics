@@ -1,10 +1,10 @@
-// import Answers from "./Answers"
+
 
 function Quiz({ question, incorrectAnswers, correctAnswer }) {
 
     function Answers() {
         const arrayConcat = incorrectAnswers.concat(correctAnswer)
-        const arrayRandom = arrayConcat.sort(() => Math.random() - 0.5);
+        const arrayRandom = arrayConcat.sort(() => Math.floor(Math.random() - 0.5));
         return arrayRandom
     }
 
