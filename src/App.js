@@ -1,11 +1,11 @@
-import './App.css';
+import './App.css'
 import './css/app.min.css'
 import Counter from './components/Counter/Counter'
 import Button from './components/Counter/Button'
-import ArrayData from './components/PeopleData';
-import ArrayButton from './components/utils/ARRAY_DATA';
+import ArrayData from './components/People/PeopleData'
+import ArrayButton from './components/utils/ARRAY_DATA'
 import RenderQuiz from './components/Quiz/RenderQuiz'
-import { useState } from 'react';
+import { useState } from 'react'
 
 function App() {
   const [count, setCount] = useState(0)

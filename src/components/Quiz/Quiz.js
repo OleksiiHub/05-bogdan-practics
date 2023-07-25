@@ -1,5 +1,3 @@
-
-
 function Quiz({ question, incorrectAnswers, correctAnswer }) {
 
     function Answers() {
