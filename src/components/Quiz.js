@@ -1,16 +1,20 @@
-function Quiz({ correctAnswer, question, incorrectAnswers }) {
+
+
+
+function Quiz({ question, incorrectAnswers, correctAnswer }) {
+    const arrayConcat = incorrectAnswers.concat(correctAnswer)
+
     return (
         <div className="card" >
             <h4>{question.text}</h4>
             <div className="card_button">
-                <button>{correctAnswer}</button>
                 {
-                    incorrectAnswers.map((e) => {
-                        return <button>{e}</button>
-                    })
-                }
+                    arrayConcat.map((e, index) => {
+                        return (
+                            <button key={index}>{e}</button>
+                        )
+                    })}
             </div>
-
         </div >
     )
 }
