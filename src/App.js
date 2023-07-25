@@ -1,20 +1,19 @@
-import { useState } from 'react';
 import './App.css';
 import './css/app.min.css'
-import Counter from './components/Counter'
-import Button from './components/Button'
-import ArrayData from './components/Array';
-import arrayButton from './components/utils/ArrayButton';
-import RenderQuiz from './components/RenderQuiz'
+import Counter from './components/Counter/Counter'
+import Button from './components/Counter/Button'
+import ArrayData from './components/PeopleData';
+import ArrayButton from './components/utils/ARRAY_DATA';
+import RenderQuiz from './components/Quiz/RenderQuiz'
+import { useState } from 'react';
 
-
-function App({ key }) {
+function App() {
   const [count, setCount] = useState(0)
   return (
     <div className="App">
       <div className='style__section '>
         <Counter count={count} />
-        {arrayButton.map((text, index) => {
+        {ArrayButton.map((text, index) => {
           return <Button key={index} count={count} onClick={setCount} text={text} />
         })}
       </div>

@@ -1,5 +1,5 @@
 import peoples from "./utils/PEOPLE_DATA"
-import People from "../components/People"
+import People from "./People"
 
 function ArrayData() {
     return (

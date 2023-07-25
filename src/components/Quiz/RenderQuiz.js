@@ -1,5 +1,5 @@
-import questions from "./utils/Questions"
-import Quiz from "./Quiz"
+import questions from "../utils/QUESTIONS_DATA"
+import Quiz from './Quiz'
 
 function RenderQuiz() {
     return (
