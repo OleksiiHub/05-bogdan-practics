@@ -11,7 +11,6 @@ function People(props) {   //берется props с Array где происхо
     } = props
 
     return (
-        <>
             <div className="card" >
                 <h2>{firstName} {lastName}</h2>
                 <h3>{email}</h3>
@@ -20,8 +19,6 @@ function People(props) {   //берется props с Array где происхо
                 <h6>{isAdmin ? 'Admin: True' : 'Admin: False'}</h6>
                 <h6>{ipAddress}</h6>
             </div >
-        </>
-
     )
 }
 

@@ -4,7 +4,7 @@ import People from "../components/People"
 function ArrayData() {
     return (
         <>
-            <h1>Длинна массива: {peoples.length}</h1>
+            <h1>Элементов в массиве: {peoples.length}</h1>
             <div className="cards">
                 {peoples.map((people) => {                    //перебор массива
                     return <People key={people.id} {...people} />
