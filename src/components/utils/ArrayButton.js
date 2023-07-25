@@ -1,9 +1,7 @@
 const arrayButton = [
-    'CLick Me', 
+    'Click Me', 
     'Click Me pls', 
-    'Push me', 
-    'Push me pls',
-    'Click & Push'
+    'Push me'
     ]
 
 export default arrayButton

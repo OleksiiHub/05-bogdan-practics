@@ -1,12 +1,12 @@
-// const objArr = { 
-//     correctAnswer: "Brawn " 
-// }
-// const answers = ["Poald", "Swile", "Grint"]
+const answers = ["Poald", "Swile", "Grint"]
 
-// function Answers(){
-
-// }
-// const arr = answers.concat(objArr.correctAnswer)
+function Answers(){
+    const arrRandom = Math.floor(Math.random()* answers.length)
+    return console.log(answers[arrRandom])
+}
+Answers()
 
 
-// console.log(arr)
+
+
+

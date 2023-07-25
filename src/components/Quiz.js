@@ -1,17 +1,21 @@
-
-
+// import Answers from "./Answers"
 
 function Quiz({ question, incorrectAnswers, correctAnswer }) {
-    const arrayConcat = incorrectAnswers.concat(correctAnswer)
+
+    function Answers() {
+        const arrayConcat = incorrectAnswers.concat(correctAnswer)
+        const arrayRandom = arrayConcat.sort(() => Math.random() - 0.5);
+        return arrayRandom
+    }
 
     return (
         <div className="card" >
             <h4>{question.text}</h4>
             <div className="card_button">
                 {
-                    arrayConcat.map((e, index) => {
+                    Answers().map((e) => {
                         return (
-                            <button key={index}>{e}</button>
+                            <button key={e}>{e}</button>
                         )
                     })}
             </div>
